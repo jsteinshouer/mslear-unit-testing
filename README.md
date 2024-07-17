@@ -26,3 +26,28 @@ Skipped Unit 4 since it was about Visual Studio
 
 ### Unit 5: Exercise - Create a test suite
 
+### Unit 6 - Sharpen your test skills
+
+Example data driven test
+
+```
+[DataTestMethod]
+[DataRow(1, 1, 2)]
+[DataRow(2, 2, 4)]
+[DataRow(3, 3, 6)]
+[DataRow(0, 0, 1)] // The test run with this row fails
+public void AddDataTests(int x, int y, int expected)
+{
+    var calculator = new Calculator();
+    var actual = calculator.Add(x, y);
+    Assert.AreEqual(expected, actual);
+}
+```
+
+## Additional materials
+
+https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-dotnet-test
+https://github.com/devlooped/moq/wiki/Quickstart
+https://learn.microsoft.com/en-us/aspnet/core/mvc/controllers/testing?view=aspnetcore-8.0
+
+
