@@ -3,10 +3,10 @@
 
 Using VS Code with the [C# Dev Kit](https://code.visualstudio.com/docs/csharp/testing) extension instead of Visual Studio
 
-### Followup
 
 https://learn.microsoft.com/en-us/dotnet/core/tutorials/testing-library-with-visual-studio-code?pivots=dotnet-8-0
 
+### Unit 3: Exercise - Write a test
 
 1. Open the Command Palette and select **.NET:New Project**.. then select **Console Application**
 2. Name it LearnMyCalculatorApp
@@ -21,4 +21,8 @@ dotnet add ../LearnMyCalculatorApp.Tests reference ../LearnMyCalculatorApp
 ```
 
 7. Click green button next to test method or use the test explorer to run tests
+
+Skipped Unit 4 since it was about Visual Studio
+
+### Unit 5: Exercise - Create a test suite
 
