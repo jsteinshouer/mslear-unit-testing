@@ -65,4 +65,17 @@ public class UnitTest1
         // Assert
         Assert.AreEqual(2, actual);
     }
+
+    [TestMethod]
+    public void DivideByZeroTest()
+    {
+        // Arrange
+        var calculator = new Calculator();
+
+        // Act
+        var actual = calculator.Divide(4, 0);
+
+        // Assert
+        Assert.IsNull(actual);
+    }
 }

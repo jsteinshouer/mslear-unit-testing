@@ -17,9 +17,17 @@ namespace LearnMyCalculatorApp
             return x * y;
         }
 
-        public int Divide(int x, int y)
+       public int? Divide(int x, int y)
         {
-            return x / y;
+            try
+            {
+                return x / y;
+            }
+            catch (DivideByZeroException)
+            {
+                Console.WriteLine("Cannot divide by zero.");
+                return null;
+            }
         }
     }
 }
