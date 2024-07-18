@@ -73,3 +73,7 @@ dotnet add ./PrimeService.Tests/PrimeService.Tests.csproj reference ./PrimeServi
 dotnet sln add ./PrimeService.Tests/PrimeService.Tests.csproj
 ```
 
+
+Finished product:
+
+https://github.com/dotnet/samples/blob/main/core/getting-started/unit-testing-using-dotnet-test/PrimeService.Tests/PrimeService_IsPrimeShould.cs
